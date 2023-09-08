@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStop - Trade In-Game Items and Accounts</title>
+    <!-- Include the Tailwind CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS for gaming theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="custom.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 font-sans text-white">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 py-4 px-5">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-3xl font-bold">GameStop</a>
+        <ul class="space-x-6 text-white hidden md:block">
+          <li class="inline-block">
+            <a href="#" class="hover:text-green-500">Home</a>
+          </li>
+          <li class="inline-block">
+            <a href="#about" class="hover:text-green-500">About</a>
+          </li>
+          <li class="inline-block">
+            <a href="#how-it-works" class="hover:text-green-500"
+              >How It Works</a
+            >
+          </li>
+          <li class="inline-block">
+            <a href="#contact" class="hover:text-green-500">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-white hover:text-accent focus:outline-none"
+          >
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden absolute top-[50px] left-0 right-0 border-gray-900 border text-center bg-gray-800"
+        >
+          <ul class="text-white text-xl space-y-4 mt-4 p-5">
+            <li class="border-b last:border-b-0 border-gray-50">
+              <a href="#" class="hover:text-accent">Home</a>
+            </li>
+            <li class="border-b last:border-b-0 border-gray-50">
+              <a href="#about" class="hover:text-accent">About</a>
+            </li>
+            <li class="border-b last:border-b-0 border-gray-50">
+              <a href="#how-it-works" class="hover:text-accent">How It Works</a>
+            </li>
+            <li class="border-b last:border-b-0 border-gray-50">
+              <a href="#contact" class="hover:text-accent">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-800 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">
+          Trade In-Game Items and Accounts
+        </h1>
+        <p class="text-xl md:text-2xl mb-10">
+          Join GameStop and discover a world of gaming opportunities.
+        </p>
+        <a
+          href="#"
+          class="bg-green-500 text-white hover:bg-green-700 py-3 px-8 rounded-full text-lg md:text-xl transition duration-300 ease-in-out transform hover:scale-105"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-700 py-16 text-center">
+      <div class="container mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          About GameStop
+        </h2>
+        <p class="text-xl text-white mb-8">
+          GameStop is your one-stop destination for trading in-game items,
+          accounts, and more. We connect gamers worldwide, making trading safe
+          and efficient.
+        </p>
+        <div
+          class="contain w-full md:w-1/2 rounded mx-auto border border-green-500 border-2"
+        >
+          <img
+            src="gamer.png"
+            alt="About GameStop"
+            class="w-full rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="bg-gray-800 py-16 p-5">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          How It Works
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Step 1 -->
+          <div class="text-xl border border-gray-600 p-5 rounded-lg">
+            <i class="fas fa-search text-green-500 text-3xl mb-4"></i>
+            <h3 class="font-semibold mb-2">Step 1: Search</h3>
+            <p>
+              Find the in-game items or accounts you want to trade using our
+              powerful search feature.
+            </p>
+          </div>
+          <!-- Step 2 -->
+          <div class="text-xl border border-gray-600 p-5 rounded-lg">
+            <i class="fas fa-exchange-alt text-green-500 text-3xl mb-4"></i>
+            <h3 class="font-semibold mb-2">Step 2: Trade</h3>
+            <p>
+              Initiate trades with other gamers or list your own items for trade
+              to start the exchange process.
+            </p>
+          </div>
+          <!-- Step 3 -->
+          <div class="text-xl border border-gray-600 p-5 rounded-lg">
+            <i class="fas fa-handshake text-green-500 text-3xl mb-4"></i>
+            <h3 class="font-semibold mb-2">Step 3: Secure</h3>
+            <p>
+              Complete trades securely using our trusted escrow system, ensuring
+              a fair and safe transaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-700 py-16 p-5">
+      <div class="container mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+          Contact Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Form -->
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-4 text-white">
+              Get in Touch
+            </h3>
+            <form action="#" method="POST" class="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  rows="4"
+                  placeholder="Your Message"
+                  class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-green-500"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="bg-green-500 text-white hover:bg-green-700 py-2 px-6 rounded-full text-lg md:text-xl transition duration-300 ease-in-out transform hover:scale-105"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-2xl md:text-3xl font-semibold mb-4 text-white">
+              Contact Information
+            </h3>
+            <ul class="text-xl text-white">
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt mr-2 text-green-500"></i>123
+                Gaming Street, GameCity
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-envelope mr-2 text-green-500"></i
+                >info@gamestop.com
+              </li>
+              <li>
+                <i class="fas fa-phone mr-2 text-green-500"></i>+1 (123)
+                456-7890
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 GameStop. All rights reserved</p>
+        <ul class="flex justify-center mt-4 space-x-6">
+          <li>
+            <a href="#" class="text-white hover:text-green-500"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-white hover:text-green-500"
+              >Terms of Service</a
+            >
+          </li>
+          <li><a href="#" class="text-white hover:text-green-500">FAQs</a></li>
+        </ul>
+        <div class="mt-6">
+          <!-- Social Media Icons -->
+          <a href="#" class="text-white hover:text-green-500 mx-2">
+            <i class="fab fa-facebook-f text-2xl"></i>
+          </a>
+          <a href="#" class="text-white hover:text-green-500 mx-2">
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a href="#" class="text-white hover:text-green-500 mx-2">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
